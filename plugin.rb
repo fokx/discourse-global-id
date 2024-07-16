@@ -1,8 +1,4 @@
 # frozen_string_literal: true
-
-gem 'autocorrect-rb', '2.11.1'
-gem 'rb_sys', '0.9.98'
-
 # name: discourse-cjk-formatter
 # about: Reformat topic titles and post texts with mixed CJK and Latin characters
 # meta_topic_id: 316533
@@ -10,6 +6,9 @@ gem 'rb_sys', '0.9.98'
 # authors: https://github.com/fokx
 # url: https://github.com/fokx/discourse-cjk-formatter
 # required_version: 2.7.0
+
+gem 'rb_sys', '0.9.98'
+gem 'autocorrect-rb', '2.11.1'
 
 enabled_site_setting :discourse_cjk_formatter_enabled
 
