@@ -7,8 +7,10 @@
 # url: https://github.com/fokx/discourse-cjk-formatter
 # required_version: 2.7.0
 
-gem 'rb_sys', '0.9.98'
-gem 'autocorrect-rb', '2.11.1'
+gem 'rb_sys', require: false
+gem 'autocorrect-rb'
+gem "parallel", require: false
+gem "ruby-progressbar", require: false
 
 enabled_site_setting :discourse_cjk_formatter_enabled
 

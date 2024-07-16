@@ -1,5 +1,6 @@
 desc 'add space between Latin and CJK characters in topic title and post content'
 task 'cjk:reformat' => :environment do
+  require 'parallel'
   Parallel.each(Post.all, progress: "Posts") do |post|
     unless post.raw.blank? or post.raw.frozen?
       post.update_column(:raw, AutoCorrect.format(post.raw.dup))
