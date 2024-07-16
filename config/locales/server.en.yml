@@ -1,1 +1,3 @@
 en:
+  site_settings:
+    discourse_cjk_formatter_enabled: "Enable the Discourse CJK formatter plugin."
