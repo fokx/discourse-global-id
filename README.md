@@ -28,4 +28,4 @@ Before use, be sure to learn about how the [`autocorrect`](https://github.com/hu
 * https://github.com/huacnlee/autocorrect
 * https://github.com/openSUSE-zh/discourse-cjk-text-spacing
 
-For more information, please see: **url to meta topic**
+For more information, please see: https://meta.discourse.org/t/cjk-formatter-plugin/316533

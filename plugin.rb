@@ -5,7 +5,7 @@ gem 'rb_sys', '0.9.98'
 
 # name: discourse-cjk-formatter
 # about: Reformat topic titles and post texts with mixed CJK and Latin characters
-# meta_topic_id: TODO
+# meta_topic_id: 316533
 # version: 0.0.1
 # authors: https://github.com/fokx
 # url: https://github.com/fokx/discourse-cjk-formatter
