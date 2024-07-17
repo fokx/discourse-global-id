@@ -25,8 +25,8 @@ after_initialize do
     NewPostManager.class_eval do
       def initialize(user, args)
         @user = user
-        args[:title] = AutoCorrect.format(args[:title]) if args[:title].present? and !args[:title].frozen?
-        args[:raw] = AutoCorrect.format(args[:raw]) if args[:raw].present? and !args[:raw].frozen?
+        args[:title] = AutoCorrect.format(args[:title]) if args[:title].present? && !args[:title].frozen?
+        args[:raw] = AutoCorrect.format(args[:raw]) if args[:raw].present? && !args[:raw].frozen?
         @args = args.delete_if { |_, v| v.nil? }
       end
     end
@@ -35,8 +35,8 @@ after_initialize do
       alias_method :old_revise!, :revise!
 
       def revise!(editor, fields, opts = {})
-        fields[:raw] = AutoCorrect.format(fields[:raw]) if fields[:raw].present? and !fields[:raw].frozen?
-        fields[:title] = AutoCorrect.format(fields[:title]) if fields[:title].present? and !fields[:title].frozen?
+        fields[:raw] = AutoCorrect.format(fields[:raw]) if fields[:raw].present? && !fields[:raw].frozen?
+        fields[:title] = AutoCorrect.format(fields[:title]) if fields[:title].present? && !fields[:title].frozen?
         old_revise!(editor, fields, opts)
       end
     end
