@@ -2,7 +2,7 @@
 # name: discourse-cjk-formatter
 # about: Reformat topic titles and post texts with mixed CJK and Latin characters
 # meta_topic_id: 316533
-# version: 0.0.1
+# version: 0.0.2
 # authors: https://github.com/fokx
 # url: https://github.com/fokx/discourse-cjk-formatter
 # required_version: 2.7.0
@@ -21,7 +21,7 @@ end
 after_initialize do
   # Code which should run after Rails has finished booting
 
-  unless SiteSetting.discourse_cjk_formatter_enabled
+  if SiteSetting.discourse_cjk_formatter_enabled
     NewPostManager.class_eval do
       def initialize(user, args)
         @user = user
