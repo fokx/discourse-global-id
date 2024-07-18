@@ -13,7 +13,7 @@ Every time a topic/post is created or updated, its content (and title) will get:
 
 ### Configuration
 
-Just enable it in settings to make it work for new posts.
+After installation, it will work for new posts.
 
 To reformat all historic posts, use `rake`:
 ```sh
