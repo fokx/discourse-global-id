@@ -1,4 +1,7 @@
-discourse_cjk_formatter:
-  discourse_cjk_formatter_enabled:
+discourse_global_id:
+  discourse_global_id_enabled:
     default: false
+    client: true
+  discourse_global_id_length:
+    default: 16
     client: true

@@ -1,3 +1,4 @@
 en:
   site_settings:
-    discourse_cjk_formatter_enabled: "Enable the Discourse CJK formatter plugin."
+    discourse_global_id_enabled: "Enable the global id plugin."
+    discourse_global_id_length: "global id string length"
